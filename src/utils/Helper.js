@@ -1,18 +1,20 @@
-export const ACCORDION_DATA = [
+export const HEADER_DATA = [
     {
-        Title: 'Who is eligible for a Growth Plan? ',
-        Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+        Title: 'About',
     },
     {
-        Title: 'Who is eligible for a Growth Plan? ',
-        Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+        Title: 'How it Works',
     },
     {
-        Title: 'Who is eligible for a Growth Plan? ',
-        Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
+        Title: 'Services',
     },
     {
-        Title: 'Who is eligible for a Growth Plan? ',
-        Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi autem recusandae in, corrupti eum aliquid molestiae facere accusantium deleniti?'
-    }
+        Title: 'Testimonils',
+    },
+    {
+        Title: 'Why Us',
+    },
+    {
+        Title: 'FAQ',
+    },
 ]
