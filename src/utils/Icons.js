@@ -1,3 +1,14 @@
+export const BlackArrowIcon = () => (
+    <svg width="13" height="13" viewBox="0 0 15 15" fill="black" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 14L14 1M14 1V13.48M14 1H1.52" stroke="#00171F" strokeWidth="1.93338" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+)
+
+export const WhiteArrow = () => (
+    <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 14L14 1M14 1V13.48M14 1H1.52" stroke="white" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+)
 export const ElectricityIcon = () => (
     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13.0126 12.7358C12.4625 12.7358 12.0149 13.1834 12.0149 13.7335C12.0149 14.2836 12.4625 14.7311 13.0126 14.7311H14.0103V13.7335C14.0103 13.1834 13.5627 12.7358 13.0126 12.7358Z" fill="white" />

@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero": "url('./assets/images/webp/hero-bg.webp')",
+      },
+      colors: {
+        "dark-blue": "#00171f",
+        "nav-bg": "#003459",
+        "sky-blue": "#00A8E8"
+      }
+    },
   },
   plugins: [],
 }
