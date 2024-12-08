@@ -12,8 +12,8 @@ export const HEADER_DATA = [
         Link: '#services'
     },
     {
-        Title: 'Testimonils',
-        Link: '#testimonils'
+        Title: 'Testimonials',
+        Link: '#Testimonials'
     },
     {
         Title: 'Why Us',

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { HEADER_DATA } from '../utils/Helper';
-import Logo from '../assets/images/webp/page-logo.webp';
 import CustomButton from './CustomButton';
 import { BlackArrowIcon } from '../utils/Icons';
 
@@ -27,7 +26,7 @@ const Header = () => {
 
     <div className='flex items-center justify-between py-6'>
       <a href="#logo">
-        <img src={Logo} alt="page-Logo" className='h-10' />
+        <img src="/assets/images/webp/page-logo.webp" alt="logo" className='h-10 max-md:h-9 max-sm:h-8' />
       </a>
       <ul className='flex items-center gap-6 max-lg:hidden'>
         {HEADER_DATA.map((obj, index) => (
@@ -36,18 +35,18 @@ const Header = () => {
       </ul>
       <button className='max-lg:hidden flex'><CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} /></button>
       <div
-        className={`lg:hidden z-30 text-3xl max-sm:text-2xl font-bold text-white  cursor-pointer`}
+        className={`lg:hidden z-40 text-3xl max-sm:text-2xl font-bold text-white  cursor-pointer`}
         onClick={() => setOpen(!open)}
       >
         {open ? "✕" : "☰"}
       </div>
-      <div className={`w-full h-full transition-all duration-500 left-0 lg:-top-full z-20 fixed flex flex-col bg-nav-bg justify-center items-center ${open ? "top-0 left-0" : "-top-full"
+      <div className={`w-full h-full transition-all duration-500 left-0 lg:-top-full z-30 fixed flex flex-col bg-nav-bg justify-center items-center ${open ? "top-0 left-0" : "-top-full"
         }`}>
         <ul className='flex items-center flex-col gap-6'>
           {HEADER_DATA.map((obj, i) => (
-            <li key={i}><a href={obj.Link} className='text-white text-base'>{obj.Title}</a></li>
+            <li key={i}><a href={obj.Link} className='text-white text-xl'>{obj.Title}</a></li>
           ))}
-          <button><CustomButton buttonText='Get Started' bg='bg-white' /></button>
+          <button><CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} /></button>
         </ul>
 
       </div>

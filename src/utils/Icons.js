@@ -4,7 +4,7 @@ export const BlackArrowIcon = () => (
     </svg>
 )
 
-export const WhiteArrow = () => (
+export const WhiteArrowIcon = () => (
     <svg width="13" height="13" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 14L14 1M14 1V13.48M14 1H1.52" stroke="white" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
