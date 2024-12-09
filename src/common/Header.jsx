@@ -24,13 +24,13 @@ const Header = () => {
 
   return (
 
-    <div className='flex items-center justify-between py-6'>
+    <div className='flex items-center justify-between py-5'>
       <a href="#logo">
         <img src="/assets/images/webp/page-logo.webp" alt="logo" className='h-10 max-md:h-9 max-sm:h-8' />
       </a>
       <ul className='flex items-center gap-6 max-lg:hidden'>
         {HEADER_DATA.map((obj, index) => (
-          <li key={index}><a href={obj.Link} className='text-white text-base font-helvetica relative flex after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-1 after:h-[0.2px] after:bg-white pb-0.5'>{obj.Title}</a></li>
+          <li key={index}><a href={obj.Link} className='text-white text-base font-helvetica relative flex after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-1 after:h-[0.5px] after:bg-white pb-0.5'>{obj.Title}</a></li>
         ))}
       </ul>
       <button className='max-lg:hidden flex'><CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} /></button>
@@ -40,11 +40,11 @@ const Header = () => {
       >
         {open ? "✕" : "☰"}
       </div>
-      <div className={`w-full h-full transition-all duration-500 left-0 lg:-top-full z-30 fixed flex flex-col bg-nav-bg justify-center items-center ${open ? "top-0 left-0" : "-top-full"
+      <div className={`w-full h-full transition-all duration-500 left-0 lg:-top-full z-30 fixed flex flex-col bg-navy-blue justify-center items-center ${open ? "top-0 left-0" : "-top-full"
         }`}>
         <ul className='flex items-center flex-col gap-6'>
           {HEADER_DATA.map((obj, i) => (
-            <li key={i}><a href={obj.Link} className='text-white text-xl'>{obj.Title}</a></li>
+            <li key={i}><a href={obj.Link} className='text-white text-xl max-sm:text-base'>{obj.Title}</a></li>
           ))}
           <button><CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} /></button>
         </ul>
