@@ -21,7 +21,7 @@ const Hero = () => {
                     <div className='w-1/2 px-3 max-lg:w-full max-lg:pt-5 max-sm:pt-2'>
                         <div className='relative flex justify-end'>
                             <img className='absolute -top-14 -right-[11.8%] max-xl:-right-4 max-xl:-top-8 max-lg:-right-10 max-[1280px]:hidden' src="./assets/images/webp/dots-image.webp" alt="Dots-image" />
-                            <img className='max-w-[558px] max-lg:max-w-[490px] mx-auto w-full relative z-[1] rounded h-[760px]  object-cover' src="./assets/images/webp/hero-image.webp" alt="Hero-image" />
+                            <img className='max-w-[558px] max-lg:max-w-[490px] mx-auto w-full relative z-[1] rounded h-[760px] max-lg:h-[550px] object-cover' src="./assets/images/webp/hero-image.webp" alt="Hero-image" />
                         </div>
                     </div>
 
