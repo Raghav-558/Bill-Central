@@ -7,7 +7,7 @@ import { WhiteArrowIcon } from '../utils/Icons'
 
 const SwitchingEnergy = () => {
     return (
-        <div className='py-[81px] max-md:py-[60px]'>
+        <div className='py-[81px] max-md:pt-[60px] max-md:pb-0'>
             <div className='max-w-[1140px] mx-auto px-4'>
                 <div className='flex flex-wrap -mx-4 flex-row justify-center max-lg:flex-col-reverse '>
                     <div className='w-1/2 px-3 max-lg:w-full max-lg:pt-8'>
