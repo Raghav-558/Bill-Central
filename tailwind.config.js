@@ -20,6 +20,12 @@ module.exports = {
         lg: '1025px',
         md: '770px',
       },
+      fontSize: {
+        'custom-28':'28px',
+        'custom-32': '32px',
+        'custom-38': '38px',
+        'custom-64': '64px',
+      },
     },
   },
   plugins: [],

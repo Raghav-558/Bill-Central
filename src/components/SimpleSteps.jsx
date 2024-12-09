@@ -16,7 +16,7 @@ const SimpleSteps = () => {
             {
                 breakpoint: 770,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     dots: true,
                     infinite: true,
@@ -41,7 +41,7 @@ const SimpleSteps = () => {
         ],
     };
     return (
-        <div className='overflow-hidden py-[81px] max-md:py-[60px]'>
+        <div className='overflow-hidden py-[81px] max-lg:py-[60px]'>
             <div className='flex flex-col mb-[58px] max-lg:mb-10 max-md:mb-8 text-center max-sm:mb-5 px-4'>
                 <Heading text='Simple Steps to' secondSpanText='Switch' />
                 <p className='text-center max-w-[610px] font-normal text-base max-md:text-sm text-light-gray opacity-90 mx-auto leading-[25.6px] pt-4'>
