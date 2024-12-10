@@ -1,38 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { COMPANIES_LOGO_LIST } from '../utils/helper';
 
 const CompanyList = () => {
-
-
-    return (
-        <div className='pt-[54px] pb-[81px] max-md:pb-0 max-sm:pt-10'>
-            <div className='max-w-[1140px] mx-auto px-4'>
-                <h3 className='font-normal text-custom-38 font-helvetica leading-[41.8px] text-navy-blue max-w-[548px] max-lg:max-w-none max-lg:mx-auto max-lg:text-center max-md:text-custom-28 max-sm:text-2xl'>More than <span className='text-sky-blue font-bold'>80,000+</span> companies trust bill central </h3>
-                <div className='flex gap-[51px] pt-16 max-lg:pt-10 max-lg:gap-10 max-lg:flex-wrap max-lg:justify-center max-md:gap-7'>
-                    <a href="#">
-                        <img src="./assets/images/webp/energy-logo.webp" alt="energy" className='w-[126px]' />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/webp/blue-nrg-logo.webp" alt="blue-nrg" className='w-[126px]' />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/webp/dodo-logo.webp" alt="dodo" className='w-[126px]' />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/webp/origin-logo.webp" alt="origin" className='w-[126px]' />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/webp/ovo-logo.webp" alt="ovo" className='w-[126px]' />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/webp/sumo-logo.webp" alt="sumo" className='w-[126px]' />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/images/webp/alg-logo.webp" alt="alg" className='w-[62px]' />
-                    </a>
-                </div>
-            </div>
+  return (
+    <div className='pt-[54px] pb-[81px] max-lg:py-[60px] max-md:pb-0'>
+      <div className='max-w-[1129px] mx-auto px-4'>
+        <h3 className='font-normal text-custom-38 font-helvetica leading-[41.8px] text-navy-blue max-w-[548px] max-lg:max-w-none max-lg:mx-auto max-lg:text-center max-md:text-custom-28 max-sm:text-2xl'>
+          More Than <span className='text-sky-blue font-bold'>80,000</span>+ Companies Trust Bill Central
+        </h3>
+        <div className='pt-16 flex gap-8 items-center justify-between max-lg:pt-10 overflow-x-auto'>
+          {COMPANIES_LOGO_LIST.map((object, index) => (
+            <img
+              key={index}
+              className={`max-w-[127px] max-h-[62px] mx-auto cursor-pointer`}
+              src={object.logo}
+              alt={object.alt}
+            />
+          ))}
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default CompanyList
+export default CompanyList;

@@ -44,7 +44,7 @@ export const SIMPLE_STEPS_LIST = [
         alt: 'Location',
         imageContent: '1. Enter Your Location and Preferences',
         Heading: '1. Your Location',
-        Content: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
     {
@@ -52,7 +52,7 @@ export const SIMPLE_STEPS_LIST = [
         alt: 'Compare',
         imageContent: '2. Compare Providers',
         Heading: '2. Compare',
-        Content: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
     {
@@ -68,7 +68,39 @@ export const SIMPLE_STEPS_LIST = [
         alt: 'Best-Plan',
         imageContent: '4. Choose the Best Plan',
         Heading: '4. Best Plan',
-        Content: 'Enter your location and preferences to find the best energy, gas, and internet plans for you.'
+        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
+]
+
+export const COMPANIES_LOGO_LIST = [
+    {
+        logo: './assets/images/webp/energy-logo.webp',
+        alt:'energy'
+    },
+    {
+        logo:'./assets/images/webp/blue-nrg-logo.webp',
+        alt:'bluenrg'
+    },
+    {
+        logo:'./assets/images/webp/dodo-logo.webp',
+        alt:'dodo'
+    },
+    {
+        logo:'./assets/images/webp/origin-logo.webp',
+        alt:'#origin'
+    },
+    {
+        logo:'./assets/images/webp/ovo-logo.webp',
+        alt:'#ovo'
+    },
+    {
+        logo:'./assets/images/webp/sumo-logo.webp',
+        alt:'#sumo'
+    },
+    {
+        logo:'./assets/images/webp/alg-logo.webp',
+        alt:'#alg'
+    },
+   
 ]

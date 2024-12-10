@@ -3,16 +3,28 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Helvetica";
-  src: url("/public/assets/fonts/Helvetica.ttf") format("truetype");
-}
-.font-helvetica {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica';
+  src: url('/public/assets/fonts/Helvetica.ttf') format('truetype');
 }
 
-@media (max-width:770px){
-.slick-list .slick-track{
-  display: flex;
-  gap: 6px;
+.font-helvetica {
+  font-family: 'Helvetica', sans-serif;
 }
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px !important;
+    color: #00A8E8 !important;
+
+}
+.slick-dots li.slick-active button:before {
+    opacity: 100;
+    color: #00A8E8 !important;
+}
+
+@media (max-width: 770px) {
+  .slick-list .slick-track {
+    display: flex;
+    gap: 6px;
+  }
 }

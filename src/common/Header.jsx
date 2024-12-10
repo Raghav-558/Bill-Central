@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { HEADER_DATA } from '../utils/Helper';
+import { HEADER_DATA } from '../utils/helper';
 import CustomButton from './CustomButton';
-import { BlackArrowIcon } from '../utils/Icons';
+import { BlackArrowIcon } from '../utils/icons';
 
 const Header = () => {
-  const [open, setOpen] = useState()
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleOverflow = () => {
-      if (open && window.innerWidth < 1024) {
+      if (open && window.innerWidth < 1025) {
         document.body.classList.add("overflow-hidden");
       } else {
         document.body.classList.remove("overflow-hidden");
@@ -21,19 +21,23 @@ const Header = () => {
     };
   }, [open]);
 
-
   return (
-
     <div className='flex items-center justify-between py-5'>
       <a href="#logo">
         <img src="/assets/images/webp/page-logo.webp" alt="logo" className='h-10 max-md:h-9 max-sm:h-8' />
       </a>
       <ul className='flex items-center gap-6 max-lg:hidden'>
         {HEADER_DATA.map((obj, index) => (
-          <li key={index}><a href={obj.Link} className='text-white text-base font-helvetica relative flex after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-1 after:h-[0.5px] after:bg-white pb-0.5'>{obj.Title}</a></li>
+          <li key={index}>
+            <a href={obj.Link} className='text-white text-base font-helvetica relative flex after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-1 after:h-[0.5px] after:bg-white pb-0.5'>
+              {obj.Title}
+            </a>
+          </li>
         ))}
       </ul>
-      <button className='max-lg:hidden flex'><CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} /></button>
+      <button className='max-lg:hidden flex'>
+        <CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} />
+      </button>
       <div
         className={`lg:hidden z-40 text-3xl max-sm:text-2xl font-bold text-white  cursor-pointer`}
         onClick={() => setOpen(!open)}
@@ -44,14 +48,23 @@ const Header = () => {
         }`}>
         <ul className='flex items-center flex-col gap-6'>
           {HEADER_DATA.map((obj, i) => (
-            <li key={i}><a href={obj.Link} className='text-white text-xl max-sm:text-base'>{obj.Title}</a></li>
+            <li key={i}>
+              <a 
+                href={obj.Link} 
+                className='text-white text-xl max-sm:text-base' 
+                onClick={() => setOpen(false)} 
+              >
+                {obj.Title}
+              </a>
+            </li>
           ))}
-          <button><CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} /></button>
+          <button onClick={() => setOpen(false)}> 
+            <CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} />
+          </button>
         </ul>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Header;
