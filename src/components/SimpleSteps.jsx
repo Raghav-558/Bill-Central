@@ -1,6 +1,6 @@
 import React from 'react';
 import { SIMPLE_STEPS_LIST } from '../utils/helper';
-import Heading from '../common/Heading';
+import SubHeading from '../common/SubHeading';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,7 +44,7 @@ const SimpleSteps = () => {
     return (
         <div className='overflow-hidden py-[81px] max-lg:py-[60px]'>
             <div className='flex flex-col pb-[58px] max-lg:pb-10 max-md:pb-8 text-center  px-4'>
-                <Heading text='Simple Steps To' secondSpanText='Switch' />
+                <SubHeading text='Simple Steps To' secondSpanText='Switch' />
                 <p className='text-center max-w-[610px] font-normal text-base max-md:text-sm text-light-gray opacity-90 mx-auto leading-[25.6px] pt-4'>
                     Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum.
                 </p>

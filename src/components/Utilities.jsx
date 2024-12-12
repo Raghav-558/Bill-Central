@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../common/Heading'
+import Heading from '../common/SubHeading'
 import Description from '../common/Description'
 import { CardButtonIcon } from '../utils/icons'
 import { UTILITIES_DATA } from '../utils/helper'

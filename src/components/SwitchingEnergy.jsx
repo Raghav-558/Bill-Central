@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../common/Heading'
+import SubHeading from '../common/SubHeading'
 import { ENERGY_PLANS_LIST } from '../utils/helper'
 import CustomButton from '../common/CustomButton'
 import { WhiteArrowIcon } from '../utils/icons'
@@ -19,7 +19,7 @@ const SwitchingEnergy = () => {
           </div>
           <div className='w-1/2  max-lg:w-full max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center pl-3 max-lg:pl-0'>
             <div className='max-w-[409px] max-lg:text-center max-lg:max-w-none '>
-              <Heading text='Made Simple ' spanText='Switching Energy' />
+              <SubHeading text='Made Simple ' spanText='Switching Energy' />
             </div>
             <div className='max-w-[558px] text-dark-blue pt-4  max-lg:max-w-[900px] max-lg:text-center'>
               <Description Para="Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills." />

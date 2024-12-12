@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Heading from '../common/Heading'
+import SubHeading from '../common/SubHeading'
 import { ACCORDION_DATA } from '../utils/helper'
 import Accordion from '../common/Accordion'
 
@@ -16,7 +16,7 @@ const Comparisons = () => {
         <div className='flex flex-wrap items-center'>
           <div className='w-full lg:w-1/2'>
             <div className='max-w-[456px] mx-auto lg:mx-0 max-lg:text-center max-lg:max-w-none'>
-              <Heading
+              <SubHeading
                 text='Comprehensive Utility'
                 secondSpanText='Comparisons'
               />

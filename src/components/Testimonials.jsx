@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import Slider from 'react-slick'
-import Heading from '../common/Heading'
+import SubHeading from '../common/SubHeading'
 import Description from '../common/Description'
 import { SLIDER_DATA } from '../utils/helper'
 import 'slick-carousel/slick/slick.css'
@@ -69,7 +69,7 @@ const Testimonials = () => {
     <div className='py-[81px] max-lg:py-[60px] max-md:pt-0'>
       <div className='max-w-[1140px] mx-auto max-lg:px-4 relative'>
         <div className='text-center'>
-          <Heading text='Our' secondSpanText='Testimonials' />
+          <SubHeading text='Our' secondSpanText='Testimonials' />
           <div className='max-w-[490px] mx-auto text-dark-blue pt-4 max-lg:max-w-[900px] max-sm:max-w-[440px]'>
             <Description Para='Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum' />
           </div>
