@@ -1,113 +1,106 @@
 import { BundleIcon, ComparisonIcon, ElectricityIcon, GasIcon, InternetIcon, Servicesicon, SupportIcon, TimeIcon } from "./icons"
 
-export const HEADER_DATA = [
+export const HEADER_LIST = [
     {
-        Title: 'About',
-        Link: 'about'
+        title: 'About',
+        link: 'about'
     },
     {
-        Title: 'How it Works',
-        Link: 'works'
+        title: 'How it Works',
+        link: 'works'
     },
     {
-        Title: 'Services',
-        Link: 'services'
+        title: 'Services',
+        link: 'services'
     },
     {
-        Title: 'Testimonials',
-        Link: 'Testimonials'
+        title: 'Testimonials',
+        link: 'Testimonials'
     },
     {
-        Title: 'Why Us',
-        Link: 'us'
+        title: 'Why Us',
+        link: 'us'
     },
     {
-        Title: 'FAQ',
-        Link: 'faq'
+        title: 'FAQ',
+        link: 'faq'
     },
 ]
 
 export const ENERGY_PLANS_LIST = [
-    {
-        Title: 'Save money by finding cheaper deals.'
-    },
-    {
-        Title: 'Get better customer service.'
-    },
-    {
-        Title: 'Explore greener, more sustainable energy options.'
-    },
-
+    "Save money by finding cheaper deals.",
+    "Get better customer service.",
+    "Explore greener, more sustainable energy options."
 ]
 
 export const SIMPLE_STEPS_LIST = [
     {
-        Image: './assets/images/webp/location-image.webp',
+        image: './assets/images/webp/location-image.webp',
         alt: 'Location',
         imageContent: '1. Enter Your Location and Preferences',
-        Heading: '1. Your Location',
-        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
+        heading: '1. Your Location',
+        content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
     {
-        Image: './assets/images/webp/compare-image.webp',
+        image: './assets/images/webp/compare-image.webp',
         alt: 'Compare',
         imageContent: '2. Compare Providers',
-        Heading: '2. Compare',
-        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
+        heading: '2. Compare',
+        content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
     {
-        Image: './assets/images/webp/switch-easily-image.webp',
+        image: './assets/images/webp/switch-easily-image.webp',
         alt: 'Switch-Easily',
         imageContent: '3. Switch Easily',
-        Heading: '3. Switch Easily',
-        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
+        heading: '3. Switch Easily',
+        content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
     {
-        Image: './assets/images/webp/best-plan-image.webp',
+        image: './assets/images/webp/best-plan-image.webp',
         alt: 'Best-Plan',
         imageContent: '4. Choose the Best Plan',
-        Heading: '4. Best Plan',
-        Content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
+        heading: '4. Best Plan',
+        content: 'Complete the process in just a few clicks. We’ll handle the rest and ensure a smooth transition to your new provider.'
     },
 
 ]
 
 export const COMPANIES_LOGO_LIST = [
     {
-        logo: './assets/images/webp/energy-logo.webp',
+        image: './assets/images/webp/energy-logo.webp',
         alt: '#energy'
     },
     {
-        logo: './assets/images/webp/blue-nrg-logo.webp',
+        image: './assets/images/webp/blue-nrg-logo.webp',
         alt: '#bluenrg'
     },
     {
-        logo: './assets/images/webp/dodo-logo.webp',
+        image: './assets/images/webp/dodo-logo.webp',
         alt: '#dodo'
     },
     {
-        logo: './assets/images/webp/origin-logo.webp',
+        image: './assets/images/webp/origin-logo.webp',
         alt: '#origin'
     },
     {
-        logo: './assets/images/webp/ovo-logo.webp',
+        image: './assets/images/webp/ovo-logo.webp',
         alt: '#ovo'
     },
     {
-        logo: './assets/images/webp/sumo-logo.webp',
+        image: './assets/images/webp/sumo-logo.webp',
         alt: '#sumo'
     },
     {
-        logo: './assets/images/webp/alg-logo.webp',
+        image: './assets/images/webp/alg-logo.webp',
         alt: '#alg'
     },
 
 ]
 
-export const ACCORDION_DATA = [
+export const COMPARISONS_ACCORDION_LIST = [
     {
         icon: <ElectricityIcon />,
         title: 'Electricity Plan Comparisons',
@@ -130,9 +123,9 @@ export const ACCORDION_DATA = [
     },
 ]
 
-export const UTILITIES_DATA = [
+export const UTILITIES_LIST = [
     {
-        icon: <ComparisonIcon/>,
+        icon: <ComparisonIcon />,
         title: 'Simplified Comparison Process',
         description: 'Our intuitive platform lets you compare the best utility providers in one place, helping you make a quick and informed decision.'
     },
@@ -153,25 +146,25 @@ export const UTILITIES_DATA = [
     },
 ]
 
-export const SLIDER_DATA = [
+export const TESTIMONIALS_SLIDER_LIST = [
     {
-        Image: './assets/images/webp/cameron-image.webp',
+        image: './assets/images/webp/cameron-image.webp',
         title: 'Cameron',
-        id:'@cameron',
-        star: './assets/images/webp/star-image.webp',
-        description:'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
-    },
-    {
-        Image: './assets/images/webp/ronald-image.webp',
-        title: 'Ronald',
-        id: '@ronald',
+        social: '@cameron',
         star: './assets/images/webp/star-image.webp',
         description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
     },
     {
-        Image: './assets/images/webp/jayshah-image.webp',
+        image: './assets/images/webp/ronald-image.webp',
+        title: 'Ronald',
+        social: '@ronald',
+        star: './assets/images/webp/star-image.webp',
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
+    },
+    {
+        image: './assets/images/webp/jayshah-image.webp',
         title: 'Jay Shah',
-        id: '@jayshah',
+        social: '@jayshah',
         star: './assets/images/webp/star-image.webp',
         description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
     },

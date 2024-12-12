@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SubHeading from '../common/SubHeading'
-import { ACCORDION_DATA } from '../utils/helper'
-import Accordion from '../common/Accordion'
+import { COMPARISONS_ACCORDION_LIST } from '../utils/helper'
+import CustomAccordion from '../common/CustomAccordion'
 
 const Comparisons = () => {
   const [active, setActive] = useState(null)
@@ -15,14 +15,14 @@ const Comparisons = () => {
       <div className='max-w-[1161px] mx-auto max-lg:px-4'>
         <div className='flex flex-wrap items-center'>
           <div className='w-full lg:w-1/2'>
-            <div className='max-w-[456px] mx-auto lg:mx-0 max-lg:text-center max-lg:max-w-none'>
+            <div className='max-w-[456px] mx-auto lg:mx-0 max-lg:text-center max-lg:max-w-none pb-6 max-lg:pb-0'>
               <SubHeading
                 text='Comprehensive Utility'
                 secondSpanText='Comparisons'
               />
             </div>
-            {ACCORDION_DATA.map((obj, index) => (
-              <Accordion
+            {COMPARISONS_ACCORDION_LIST.map((obj, index) => (
+              <CustomAccordion
                 key={index}
                 active={active}
                 handleToggle={handleToggle}

@@ -7,7 +7,7 @@
   src: url('/public/assets/fonts/Helvetica.ttf') format('truetype');
 }
 
-.font-helvetica {
+body {
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -22,7 +22,7 @@
   color: #00a8e8 !important;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 769.99px) {
   .slick-list .slick-track {
     display: flex;
     gap: 6px;
@@ -40,7 +40,7 @@
   animation-duration: 300ms;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1024.99px) {
   .custom-slider .slick-list .slick-track {
     display: flex;
     gap: 10px;
@@ -52,4 +52,8 @@
   font-size: 12px !important;
   top: 10px;
   color: #00a8e8 !important;
+}
+
+.group:hover .utilities-icon svg path {
+  fill: white;
 }

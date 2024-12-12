@@ -24,24 +24,23 @@ const SwitchingEnergy = () => {
             <div className='max-w-[558px] text-dark-blue pt-4  max-lg:max-w-[900px] max-lg:text-center'>
               <Description Para="Say goodbye to confusing energy plans! We simplify the process by providing clear and competitive electricity and gas recommendations. Whether you're moving or just seeking a better deal, our platform connects you with the best energy providers quickly and easily, helping you save on energy bills." />
             </div>
-            <h4 className='font-helvetica font-normal text-2xl max-sm:text-xl leading-[26.4px] text-navy-blue pt-[38px] max-lg:pt-5 max-sm:text-center'>
+            <h4 className='font-normal text-2xl max-sm:text-xl leading-[26.4px] text-navy-blue pt-[38px] max-lg:pt-5 max-sm:text-center'>
               Benefits Of Comparing Energy Plans
             </h4>
             <ul className='list-disc pl-5 pt-5  max-sm:pt-4'>
               {ENERGY_PLANS_LIST.map((obj, index) => (
                 <li
                   key={index}
-                  className='text-dark-blue text-base leading-6 font-normal font-helvetica py-1 max-sm:text-sm'
+                  className='text-dark-blue text-base leading-6 font-normal py-1 max-sm:text-sm'
                 >
-                  {obj.Title}
+                  {obj}
                 </li>
               ))}
             </ul>
             <div className='pt-[38px] max-lg:pt-5'>
               <CustomButton
                 buttonText='Compare With Us'
-                bg='bg-sky-blue'
-                color='text-white'
+                myClass='bg-sky-blue text-white'
                 buttonSpan={<WhiteArrowIcon />}
               />
             </div>

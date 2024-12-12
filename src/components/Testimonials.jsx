@@ -2,10 +2,10 @@ import React, { useRef } from 'react'
 import Slider from 'react-slick'
 import SubHeading from '../common/SubHeading'
 import Description from '../common/Description'
-import { SLIDER_DATA } from '../utils/helper'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { SliderLeftArrow, SliderRightArrow } from '../utils/icons'
+import { TESTIMONIALS_SLIDER_LIST } from '../utils/helper'
 
 const Testimonials = () => {
   const sliderRef = useRef(null)
@@ -25,7 +25,6 @@ const Testimonials = () => {
           dots: true,
           autoplay: true,
           autoplaySpeed: 2000,
-          slidesToScroll: 1
         }
       },
       {
@@ -35,7 +34,6 @@ const Testimonials = () => {
           autoplay: true,
           autoplaySpeed: 2000,
           centerMode: true,
-          slidesToScroll: 1,
           dots: true
         }
       },
@@ -43,7 +41,6 @@ const Testimonials = () => {
         breakpoint: 560,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
           centerMode: true,
           autoplaySpeed: 2000,
           autoplay: true,
@@ -76,24 +73,24 @@ const Testimonials = () => {
         </div>
         <div className='pt-[62px] custom-slider max-md:pt-8 max-lg:pt-10'>
           <Slider {...settings} ref={sliderRef}>
-            {SLIDER_DATA.map((obj, i) => (
+            {TESTIMONIALS_SLIDER_LIST.map((obj, i) => (
               <div
                 key={i}
                 className='p-5 rounded border border-light-shadow border-opacity-10 shadow-[0px_0px_13.9px_0px] shadow-light-shadow'
               >
                 <div className='flex gap-2 items-center pb-6 max-sm:pb-4'>
-                  <img src={obj.Image} alt='profile' className='max-w-[60px]' />
+                  <img src={obj.image} alt='profile' className='max-w-[60px]' />
                   <div>
-                    <p className='font-helvetica text-2xl max-sm:text-xl leading-9 text-black'>
+                    <p className='text-2xl max-sm:text-xl leading-9 text-black'>
                       {obj.title}
                     </p>
-                    <p className='font-helvetica text-base max-sm:text-sm opacity-50 leading-6 text-black'>
-                      {obj.id}
+                    <p className='text-base max-sm:text-sm opacity-50 leading-6 text-black'>
+                      {obj.social}
                     </p>
                   </div>
                 </div>
                 <img src={obj.star} alt='star-image' className='max-w-[99px]' />
-                <p className='font-helvetica font-normal text-base max-sm:text-sm leading-6 text-dark-blue max-w-[324px] max-lg:max-w-none pt-[18px] max-sm:pt-4'>
+                <p className='font-normal text-base max-sm:text-sm leading-6 text-dark-blue max-w-[324px] max-lg:max-w-none pt-[18px] max-sm:pt-4'>
                   {obj.description}
                 </p>
               </div>

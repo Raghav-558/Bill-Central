@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HEADER_DATA } from '../utils/helper';
+import { HEADER_LIST } from '../utils/helper';
 import CustomButton from './CustomButton';
 import { BlackArrowIcon } from '../utils/icons';
 
@@ -27,16 +27,16 @@ const Header = () => {
         <img src="/assets/images/webp/page-logo.webp" alt="logo" className='h-10 max-md:h-9 max-sm:h-8' />
       </a>
       <ul className='flex items-center gap-6 max-lg:hidden'>
-        {HEADER_DATA.map((obj, index) => (
+        {HEADER_LIST.map((obj, index) => (
           <li key={index}>
-            <a href={obj.Link} className='text-white text-base font-helvetica relative flex after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-1 after:h-[0.5px] after:bg-white pb-0.5'>
-              {obj.Title}
+            <a href={obj.link} className='text-white text-base relative flex after:absolute after:w-0 after:transition-all after:duration-300 after:hover:w-full after:bottom-1 after:h-[0.5px] after:bg-white pb-0.5'>
+              {obj.title}
             </a>
           </li>
         ))}
       </ul>
       <div className='max-lg:hidden flex'>
-        <CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} />
+        <CustomButton buttonText='Get Started' myClass="bg-white" buttonSpan={<BlackArrowIcon />} />
       </div>
       <div
         className={`lg:hidden z-40 text-3xl max-sm:text-2xl font-bold text-white  cursor-pointer`}
@@ -47,19 +47,19 @@ const Header = () => {
       <div className={`w-full h-full transition-all duration-500 left-0 lg:-top-full z-30 fixed flex flex-col bg-navy-blue justify-center items-center ${open ? "top-0 left-0" : "-top-full"
         }`}>
         <ul className='flex items-center flex-col gap-6'>
-          {HEADER_DATA.map((obj, i) => (
+          {HEADER_LIST.map((obj, i) => (
             <li key={i}>
               <a 
-                href={obj.Link} 
+                href={obj.link} 
                 className='text-white text-xl max-sm:text-base' 
                 onClick={() => setOpen(false)} 
               >
-                {obj.Title}
+                {obj.title}
               </a>
             </li>
           ))}
           <div onClick={() => setOpen(false)}> 
-            <CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} />
+            <CustomButton buttonText='Get Started' myClass='bg-white' buttonSpan={<BlackArrowIcon />} />
           </div>
         </ul>
       </div>
