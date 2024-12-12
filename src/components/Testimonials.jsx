@@ -13,7 +13,8 @@ const Testimonials = () => {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 500,
+    speed: 700,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -22,7 +23,6 @@ const Testimonials = () => {
         settings: {
           slidesToShow: 3,
           dots: true,
-          speed: 500,
           autoplay: true,
           autoplaySpeed: 2000,
           slidesToScroll: 1
@@ -40,12 +40,13 @@ const Testimonials = () => {
         }
       },
       {
-        breakpoint: 660,
+        breakpoint: 560,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
           autoplaySpeed: 2000,
+          autoplay: true,
           dots: true
         }
       }
@@ -73,7 +74,7 @@ const Testimonials = () => {
             <Description Para='Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum' />
           </div>
         </div>
-        <div className='pt-[62px] custom-slider max-md:pt-8'>
+        <div className='pt-[62px] custom-slider max-md:pt-8 max-lg:pt-10'>
           <Slider {...settings} ref={sliderRef}>
             {SLIDER_DATA.map((obj, i) => (
               <div
@@ -98,18 +99,24 @@ const Testimonials = () => {
               </div>
             ))}
           </Slider>
-          <div className='absolute top-[284px] left-[-54px] right-[-54px] z-10 flex justify-between max-lg:hidden'>
+          <div className='absolute top-[284px] left-[-54px] right-[-54px] z-10 flex justify-between max-xl:hidden'>
             <button
               className='h-10 w-10 rounded-full border border-dark-blue group flex items-center justify-center hover:bg-dark-blue transition-all duration-300'
               onClick={handlePrevClick}
             >
-              <SliderLeftArrow customFill='fill-dark-blue' myHover="group-hover:fill-white transition-all duration-300" />
+              <SliderLeftArrow
+                colorFill='fill-dark-blue'
+                myHover='group-hover:fill-white transition-all duration-300'
+              />
             </button>
             <button
               className='h-10 w-10 rounded-full border border-dark-blue flex items-center justify-center hover:bg-dark-blue transition-all duration-300 group'
               onClick={handleNextClick}
             >
-              <SliderRightArrow  customFill='fill-dark-blue' myHover="group-hover:fill-white transition-all duration-300"/>
+              <SliderRightArrow
+                colorFill='fill-dark-blue'
+                myHover='group-hover:fill-white transition-all duration-300'
+              />
             </button>
           </div>
         </div>

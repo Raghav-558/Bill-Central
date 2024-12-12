@@ -3,27 +3,27 @@ import { BundleIcon, ComparisonIcon, ElectricityIcon, GasIcon, InternetIcon, Ser
 export const HEADER_DATA = [
     {
         Title: 'About',
-        Link: '#about'
+        Link: 'about'
     },
     {
         Title: 'How it Works',
-        Link: '#works'
+        Link: 'works'
     },
     {
         Title: 'Services',
-        Link: '#services'
+        Link: 'services'
     },
     {
         Title: 'Testimonials',
-        Link: '#Testimonials'
+        Link: 'Testimonials'
     },
     {
         Title: 'Why Us',
-        Link: '#us'
+        Link: 'us'
     },
     {
         Title: 'FAQ',
-        Link: '#faq'
+        Link: 'faq'
     },
 ]
 

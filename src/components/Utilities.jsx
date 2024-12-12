@@ -14,16 +14,15 @@ const Utilities = () => {
             <Description Para="This emphasizes both the action and the benefits, drawing in potential customers with a clear value proposition. Let me know if you'd like any adjustments!" />
           </div>
         </div>
-        <div className='flex flex-wrap pt-[46px] justify-center'>
+        <div className='flex flex-wrap pt-[46px] max-lg:pt-8 justify-center'>
           <div className='w-5/12 flex justify-center max-lg:w-full items-center'>
-            <div className='bg-navy-blue p-10 max-sm:p-6 rounded pt- max-lg:pt-0'>
-              ;
+            <div className='bg-navy-blue p-10 max-sm:p-6 rounded'>
               <img
                 src='/assets/images/webp/thumb-up.webp'
-                alt='thumb-up'
-                className='h-60 max-lg:h-48 max-md:h-32'
+                alt='thumb-up-image'
+                className='h-60 lg:w-[233px] max-lg:h-48 max-md:h-32 pt-[17px] max-lg:py-0'
               />
-              <h5 className='font-helvetica font-normal text-2xl leading-[26.4px] text-white pt-[51px] max-lg:pt-8 max-md:pt-6'>
+              <h5 className='font-helvetica font-normal text-2xl leading-[26.4px] text-white pt-[51.17px] max-lg:pt-8 max-md:pt-6'>
                 Tailored Recommendations
               </h5>
               <div className='text-white pt-3 max-w-[344px] max-sm:text-sm'>
@@ -38,15 +37,15 @@ const Utilities = () => {
             <div className='flex flex-wrap'>
               {UTILITIES_DATA.map((obj, i) => (
                 <div
-                  className='w-6/12 max-md:w-full max-w-[334px] mx-auto p-3'
+                  className='w-6/12 max-md:w-1/2 max-sm:w-full max-w-[334px] max-lg:max-w-none mx-auto p-3 max-sm:p-0 max-sm:py-3'
                   key={i}
                 >
-                  <div className='p-6 h-[286px] border border-dark-blue border-opacity-10 rounded shadow-[0px_0px_13.9px_0px] shadow-light-shadow'>
+                  <div className='p-6 h-[286px] max-sm:h[200px] border border-dark-blue border-opacity-10 rounded shadow-[0px_0px_13.9px_0px] shadow-light-shadow'>
                     <div>{obj.icon}</div>
                     <h3 className='group-hover:text-white pt-[18px] font-normal text-2xl leading-6 text-light-black'>
                       {obj.title}
                     </h3>
-                    <p className='text-base font-normal leading-6 text-dark-blue max-sm:text-sm max-w-[286px] pt-3'>
+                    <p className='text-base font-normal leading-6 text-dark-blue max-w-[286px] pt-3 max-lg:max-w-none opacity-90'>
                       {obj.description}
                     </p>
                   </div>

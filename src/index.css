@@ -12,14 +12,14 @@
 }
 
 .slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 12px !important;
-    color: #00A8E8 !important;
-
+  font-family: 'slick';
+  font-size: 12px !important;
+  color: #00a8e8 !important;
 }
+
 .slick-dots li.slick-active button:before {
-    opacity: 100;
-    color: #00A8E8 !important;
+  opacity: 100;
+  color: #00a8e8 !important;
 }
 
 @media (max-width: 770px) {
@@ -29,9 +29,15 @@
   }
 }
 
-.custom-slider .slick-list .slick-track{
+.custom-slider .slick-list .slick-track {
   display: flex;
   gap: 24px;
+}
+
+.faq-icon svg path {
+  fill: white;
+  transition: all;
+  animation-duration: 300ms;
 }
 
 @media (max-width: 1025px) {
@@ -42,9 +48,8 @@
 }
 
 .custom-slider .slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 12px !important;
-    top: 10px;
-    color: #00A8E8 !important;
-
+  font-family: 'slick';
+  font-size: 12px !important;
+  top: 10px;
+  color: #00a8e8 !important;
 }
