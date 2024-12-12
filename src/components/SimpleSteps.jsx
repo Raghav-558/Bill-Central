@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 const SimpleSteps = () => {
     let settings = {
         dots: false,
-         slidesToShow: 4,
+        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
         arrows: false,
@@ -34,6 +34,7 @@ const SimpleSteps = () => {
                     infinite: true,
                     speed: 1000,
                     autoplaySpeed: 3000,
+                    centerMode:true,
                     autoplay: true,
                 },
             },
@@ -51,7 +52,7 @@ const SimpleSteps = () => {
             <div className='max-w-[1440px] mx-auto w-full max-md:px-4'>
                 <Slider {...settings}>
                     {SIMPLE_STEPS_LIST.map((item, index) => (
-                        <div key={index} className='relative group cursor-pointer overflow-hidden font-helvetica'>
+                        <div key={index} className='relative group cursor-pointer overflow-hidden font-helvetica w-full'>
                             <img src={item.Image} alt={item.alt} className='w-[360px] max-lg:h-[500px] object-cover max-md:mx-auto' />
                             <div className='absolute group-hover:h-0 group-hover:bg-hidden group-hover:z-10 transition-all duration-300 bg-light-blue opacity-94 top-0 left-0 w-full h-full'>
                                 <div className='relative w-full h-full'>

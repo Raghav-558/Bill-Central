@@ -13,7 +13,11 @@ module.exports = {
         "navy-blue": "#003459",
         "sky-blue": "#00A8E8",
         "light-blue": "#E6F4F8",
-        "light-gray":"#4B4B4B"
+        "light-gray": "#4B4B4B",
+        "light-green": "#EAF9FF",
+        "dark-gray": "#00000014",
+        "light-shadow": "#0000001a",
+        "light-black":"#010101"
       },
       screens: {
         xlg: '1050px',
@@ -21,7 +25,7 @@ module.exports = {
         md: '770px',
       },
       fontSize: {
-        'custom-28':'28px',
+        'custom-28': '28px',
         'custom-32': '32px',
         'custom-38': '38px',
         'custom-64': '64px',

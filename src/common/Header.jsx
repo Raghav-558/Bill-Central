@@ -35,9 +35,9 @@ const Header = () => {
           </li>
         ))}
       </ul>
-      <button className='max-lg:hidden flex'>
+      <div className='max-lg:hidden flex'>
         <CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} />
-      </button>
+      </div>
       <div
         className={`lg:hidden z-40 text-3xl max-sm:text-2xl font-bold text-white  cursor-pointer`}
         onClick={() => setOpen(!open)}
@@ -58,9 +58,9 @@ const Header = () => {
               </a>
             </li>
           ))}
-          <button onClick={() => setOpen(false)}> 
+          <div onClick={() => setOpen(false)}> 
             <CustomButton buttonText='Get Started' bg='bg-white' buttonSpan={<BlackArrowIcon />} />
-          </button>
+          </div>
         </ul>
       </div>
     </div>

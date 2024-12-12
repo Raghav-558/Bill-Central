@@ -1,18 +1,25 @@
 import './App.css';
-import CompanyList from './components/CompanyList';
-import Hero from './components/Hero';
-import SimpleSteps from './components/SimpleSteps';
-import SwitchingEnergy from './components/SwitchingEnergy';
-import Dummy from './Dummy';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './view/Main';
+import About from './view/About';
+import Services from './view/Services';
+import Works from './view/Works';
+import Testimonials from './view/Testimonials';
+import Faq from './view/Faq';
+
 
 function App() {
   return (
-    <>
-      <Hero />
-      <CompanyList />
-      <SwitchingEnergy />
-      <SimpleSteps/>
-    </>
+    <BrowserRouter>
+      <Routes> 
+        <Route path="/" element={<Main />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/faq" element={<Faq />} />
+      </Routes>
+    </BrowserRouter> 
   );
 }
 

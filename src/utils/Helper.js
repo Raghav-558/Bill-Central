@@ -1,3 +1,5 @@
+import { BundleIcon, ComparisonIcon, ElectricityIcon, GasIcon, InternetIcon, Servicesicon, SupportIcon, TimeIcon } from "./icons"
+
 export const HEADER_DATA = [
     {
         Title: 'About',
@@ -76,31 +78,101 @@ export const SIMPLE_STEPS_LIST = [
 export const COMPANIES_LOGO_LIST = [
     {
         logo: './assets/images/webp/energy-logo.webp',
-        alt:'energy'
+        alt: '#energy'
     },
     {
-        logo:'./assets/images/webp/blue-nrg-logo.webp',
-        alt:'bluenrg'
+        logo: './assets/images/webp/blue-nrg-logo.webp',
+        alt: '#bluenrg'
     },
     {
-        logo:'./assets/images/webp/dodo-logo.webp',
-        alt:'dodo'
+        logo: './assets/images/webp/dodo-logo.webp',
+        alt: '#dodo'
     },
     {
-        logo:'./assets/images/webp/origin-logo.webp',
-        alt:'#origin'
+        logo: './assets/images/webp/origin-logo.webp',
+        alt: '#origin'
     },
     {
-        logo:'./assets/images/webp/ovo-logo.webp',
-        alt:'#ovo'
+        logo: './assets/images/webp/ovo-logo.webp',
+        alt: '#ovo'
     },
     {
-        logo:'./assets/images/webp/sumo-logo.webp',
-        alt:'#sumo'
+        logo: './assets/images/webp/sumo-logo.webp',
+        alt: '#sumo'
     },
     {
-        logo:'./assets/images/webp/alg-logo.webp',
-        alt:'#alg'
+        logo: './assets/images/webp/alg-logo.webp',
+        alt: '#alg'
     },
-   
+
+]
+
+export const ACCORDION_DATA = [
+    {
+        icon: <ElectricityIcon />,
+        title: 'Electricity Plan Comparisons',
+        description: 'Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.'
+    },
+    {
+        icon: <GasIcon />,
+        title: 'Gas Plan Comparisons',
+        description: 'Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.'
+    },
+    {
+        icon: <InternetIcon />,
+        title: 'Internet Plan Comparisons',
+        description: 'Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.'
+    },
+    {
+        icon: <BundleIcon />,
+        title: 'Bundle Packages',
+        description: 'Whether you want renewable energy, low rates, or flexible contracts, we’ll help you find the best provider.'
+    },
+]
+
+export const UTILITIES_DATA = [
+    {
+        icon: <ComparisonIcon/>,
+        title: 'Simplified Comparison Process',
+        description: 'Our intuitive platform lets you compare the best utility providers in one place, helping you make a quick and informed decision.'
+    },
+    {
+        icon: <Servicesicon />,
+        title: 'No Service Interruptions',
+        description: 'We take care of the entire switching process so you can enjoy a hassle-free experience with zero downtime.'
+    },
+    {
+        icon: <TimeIcon />,
+        title: 'Save Time and Money',
+        description: 'With up-to-date plans and pricing, you can be sure you’re getting the most competitive rates available.'
+    },
+    {
+        icon: <SupportIcon />,
+        title: 'Comprehensive Support',
+        description: 'Whether you need assistance selecting a plan or during the switch, our dedicated support team is here to help every step of the way.'
+    },
+]
+
+export const SLIDER_DATA = [
+    {
+        Image: './assets/images/webp/cameron-image.webp',
+        title: 'Cameron',
+        id:'@cameron',
+        star: './assets/images/webp/star-image.webp',
+        description:'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
+    },
+    {
+        Image: './assets/images/webp/ronald-image.webp',
+        title: 'Ronald',
+        id: '@ronald',
+        star: './assets/images/webp/star-image.webp',
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
+    },
+    {
+        Image: './assets/images/webp/jayshah-image.webp',
+        title: 'Jay Shah',
+        id: '@jayshah',
+        star: './assets/images/webp/star-image.webp',
+        description: 'Lorem adipis cing elit ipsum dolor sit amet, consectetur adipis cing elit. Vivamus lacinia odio  adipiscing elit vitae vestibulum vestibulum.'
+    },
 ]

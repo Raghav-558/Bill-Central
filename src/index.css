@@ -28,3 +28,23 @@
     gap: 6px;
   }
 }
+
+.custom-slider .slick-list .slick-track{
+  display: flex;
+  gap: 24px;
+}
+
+@media (max-width: 1025px) {
+  .custom-slider .slick-list .slick-track {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.custom-slider .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 12px !important;
+    top: 10px;
+    color: #00A8E8 !important;
+
+}
